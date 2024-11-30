@@ -1,0 +1,205 @@
+:root{
+    --SliderBlack: #090809ff;
+    --SiderSilver: #bfc0c0ff;
+    --SliderWhite: #ffffffff;
+    --SliderCoral: #ef8354ff;
+    --SliderOrange: #ff7f11ff;
+    --GradientTop: linear-gradient(0deg, #090809ff, #bfc0c0ff, #ffffffff, #ef8354ff, #ff7f11ff);
+    --GradientRight: linear-gradient(90deg, #090809ff, #bfc0c0ff, #ffffffff, #ef8354ff, #ff7f11ff);
+    --GradientBottom: linear-gradient(180deg, #090809ff, #bfc0c0ff, #ffffffff, #ef8354ff, #ff7f11ff);
+    --GradientLeft: linear-gradient(270deg, #090809ff, #bfc0c0ff, #ffffffff, #ef8354ff, #ff7f11ff);
+}
+
+body{
+    background-color: var(--SliderBlack);
+    color: var(--SliderWhite);
+    font-size: 12px;
+    overflow-x: hidden;
+}
+
+.container .list .listItem .content{
+    top: 10%;
+    padding: 0px;
+}
+
+.container .list .listItem .title{
+    font-size: 10vw;
+    margin-bottom: 5px;
+}
+
+.container .list .listItem .description{
+    font-size: clamp(18px, 3.5vw, 28px);
+}
+
+.container .list .listItem .buttons{
+    display: grid;
+    grid-template-columns: repeat(1,130px);
+    grid-template-rows: 40px;
+    margin-top: 20px;
+}
+
+.container .list .listItem .buttons button{
+    height: 38px;
+}
+
+.container .thumb{
+    bottom: 5%;
+    left: 10%;
+}
+
+.container .thumb .thumbItem{
+    width: 100px;
+    height: 150px;
+}
+
+.container .arrows{
+    position: relative;
+    top: 64%;
+    left: 10%;
+}
+
+.container .arrows button{
+    font-size: 1em;
+}
+
+.container.next .list .listItem:nth-last-child(1) img{
+    left: 20%;
+}
+
+
+@keyframes hideMainImage {
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 10px;
+        bottom: 50px;
+        left: 10%;
+    }
+}
+
+
+.topPlaces{
+    padding: 20px;
+}
+
+.topPlaces h3{
+    padding: 10px;
+    font-size: 10vw;
+}
+
+.topPlaces #cityTitle{
+    width: 100%;
+    font-size: 5vw;
+}
+
+.topPlaces .placesButtons button{
+    height: 40px;
+    width: 40px;
+}
+
+.topPlaces .placesContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.topPlaces .placesContainer .itensContainer{
+    padding: 0px;
+    margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.topPlaces .placesContainer .itensContainer .questionText{
+    opacity: 0;
+}
+
+.topPlaces .placesContainer .itensContainer.active .questionText{
+    margin: auto;
+    max-width: 90%;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.topPlaces .placesContainer .itensContainer.active{
+    background-color: var(--SiderSilver);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cadalugar{
+    background-color: red;
+}
+
+.topPlaces .placesContainer .itensContainer .title {
+    margin: 0px;
+}
+
+.topPlaces .placesContainer .itensContainer.active .title {
+    display: none;
+}
+
+.topPlaces .placesContainer .itensContainer .placesItens img{
+   display: none;
+}
+
+.topPlaces .placesContainer .itensContainer.active .placesItens img{
+   margin-bottom: 0px;
+   margin-top: 20px;
+   display: block;
+}
+
+.topPlaces .placesContainer .itensContainer .placesItens .placeName{
+    margin-top: 10px;
+}
+
+.topPlaces .placesContainer .itensContainer .placesItens button{
+    display: none;
+}
+.topPlaces .placesContainer .itensContainer.active .placesItens button{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contactSection{
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection .formContainer{
+    width: 100%;
+}
+
+.contactSection .formContainer form .checkOptions{
+    flex-direction: column;
+}
+
+.contactSection .imgContactContainer{
+    padding: 0px;
+}
+
+.contactSection .imgContactContainer .passport{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection .imgContactContainer .passport .postCardDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactSection .imgContactContainer .passport .postCardDiv img{
+    border: 3px dashed black;
+    max-width: 110px;
+    max-height: 110px;
+}
+
+footer{
+    margin-top: 10px;
+}
