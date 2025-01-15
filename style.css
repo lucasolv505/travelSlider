@@ -108,14 +108,6 @@ header a{
     gap: 5px;
 }
 
-.container .list .listItem .buttons button{
-    border: none;
-    background-color: var(--SliderWhite);
-    letter-spacing: 3px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
 .container .list .listItem .buttons button:hover{
     background-color: transparent;
     border: 1px solid var(--SliderWhite);

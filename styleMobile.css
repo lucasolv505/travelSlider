@@ -11,10 +11,20 @@
 }
 
 body{
-    background-color: var(--SliderBlack);
+    background-color: (var(--SliderBlack));
     color: var(--SliderWhite);
     font-size: 12px;
     overflow-x: hidden;
+}
+
+.list{
+    
+    background-color: blue;
+    overflow: hidden;
+}
+
+.container .list .listItem img{
+    width: 100%;
 }
 
 .container .list .listItem .content{
@@ -43,8 +53,9 @@ body{
 }
 
 .container .thumb{
+    width: 100%;
     bottom: 5%;
-    left: 10%;
+    left: 0%;
 }
 
 .container .thumb .thumbItem{
