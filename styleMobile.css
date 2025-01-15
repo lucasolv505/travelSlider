@@ -17,12 +17,6 @@ body{
     overflow-x: hidden;
 }
 
-.list{
-    
-    background-color: blue;
-    overflow: hidden;
-}
-
 .container .list .listItem img{
     width: 100%;
 }
